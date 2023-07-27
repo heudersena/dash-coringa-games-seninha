@@ -18,5 +18,7 @@ COPY . .
 # compila a aplicação de produção com minificação
 RUN npm run build
 
+ENV API_URL_IO=localhost
+
 EXPOSE 8080
 CMD [ "http-server", "dist" ]
